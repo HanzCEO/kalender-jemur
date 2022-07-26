@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Kalender Jemur LinS</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Cari hari yang cerah dan tepat untuk menjemur pakaian di kompleks LinS ABhome">
+		<meta name="keywords" content="plan, apakah hari ini hujan, schedule">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- SIGKEY :: Hanz -->
+	</head>
+
+	<body>
+		<h1>Kalender Jemur LinS</h1>
+		<!-- Almanac -->
+		<div class="box grid" id="almanac" style="--grid-size: 20px">
+			<div class="almanac-item green"><span>26</span></div>
+		</div>
+		<!-- Detail Box -->
+		<div class="box">
+			<b id="selectedDate">26 Juli 2022</b>
+			<div class="flex column">
+				<canvas id="perHourTempChart"></canvas>
+				<!-- Precipitation :: Kadar Air -->
+				<canvas id="perHourPrecChart"></canvas>
+				<!-- Per Hour Weather -->
+				<div class="flex" id="perHourWeather">
+					<div class="flex column">
+						<span>00:00</span>
+						<div class="wh-sunny"></div>
+						<span>23°</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
